@@ -48,6 +48,9 @@ governance change is limited to files inside this `Governance/` folder.
 
 ## New governance documents
 
+- [Governance FAQ](FAQ.md): quick answers to common governance questions. (Closes #2508)
+- [Subproject and module governance](SUBPROJECTS.md): per-area ownership, autonomy, and cross-area rules. (Closes #2507)
+- [Security response team](roles/SECURITY_TEAM.md): membership, authority, and confidentiality. (Closes #2517)
 - [Roles and responsibilities](ROLES.md): role index plus the responsibility and permission matrices. (Closes #2510)
 - [Maintainer role](roles/MAINTAINER.md): duties, rights, and responsiveness expectations for maintainers. (Closes #2511)
 - [Reviewer role](roles/REVIEWER.md): review scope and the approvals a reviewer may give. (Closes #2512)
