@@ -124,3 +124,42 @@ expected: the win scales with the number of unchanged cards.
 **Measuring in the app:** open React DevTools → Profiler, re-render the
 reputation page (e.g. toggle an unrelated filter), and confirm `BadgeCard`
 commits drop to zero when the badge data has not changed.
+
+## 8. Memoized global Header (#2498)
+
+`components/layout/Header.tsx` is mounted once by `AppLayout` and stays on
+screen for the whole session. It is now wrapped in `React.memo`, its callback
+prop is stabilized with `useCallback` in `AppLayout`, the navigation slice is
+derived with `useMemo`, and `useTranslatedNavigation` (`lib/config/navigation.ts`)
+returns memoized arrays. Together these stop the heavy header subtree — global
+search, notification bell, wallet connect, user menu, breadcrumbs — from
+re-rendering when an ancestor re-renders for an unrelated reason (for example
+opening the mobile menu).
+
+**Before/after (Vitest, `scripts/benchmarks/render-coalescing.bench.tsx`):**
+across 20 parent re-renders with unchanged props, the Header body rendered
+**21× before** (once per parent render) versus **1× after** memoization —
+**20 renders avoided**. The navigation still re-renders when the route or the
+callback genuinely changes.
+
+**Measuring in the app:** open React DevTools → Profiler, record a navigation
+or a mobile-menu toggle, and confirm the `Header` commit count stops scaling
+with unrelated ancestor state changes.
+
+## 9. Debounced quest list filters (#2499)
+
+`components/quest/QuestListFilters.tsx` previously invoked its `onChange`
+handlers on every keystroke/selection, and each handler pushes a URL update in
+`app/[locale]/quests/page.tsx`, which triggers a quest fetch. The component now
+routes changes through per-control debounced emitters (`lib/utils/debounce.ts`)
+using `DEFAULT_FILTER_DEBOUNCE_MS` from `lib/hooks/useQuestFilter.ts`, and the
+hook itself debounces the applied criteria before recomputing the filtered
+list. Controls stay responsive; only the expensive propagation is coalesced.
+
+**Before/after (Vitest, `scripts/benchmarks/render-coalescing.bench.tsx`):**
+20 rapid reward-range edits produced **20 callback dispatches before** versus
+**1 after** debouncing — **19 redundant updates avoided** per burst. The same
+coalescing is covered for the hook by `useQuestFilter.test.ts`.
+
+**Measuring in the app:** type quickly into the reward range and watch the
+Network tab — requests collapse to one per pause instead of one per keystroke.
