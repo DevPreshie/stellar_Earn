@@ -48,6 +48,8 @@ governance change is limited to files inside this `Governance/` folder.
 
 ## New governance documents
 
+- [Project charter](CHARTER.md): purpose, scope, and the authority structure of the project. (Closes #2501)
+- [Mission and scope](MISSION.md): the project mission, in-scope work, and explicit non-goals. (Closes #2503)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
