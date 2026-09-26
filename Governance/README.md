@@ -62,6 +62,10 @@ governance change is limited to files inside this `Governance/` folder.
 - [Branching strategy](BRANCHING_STRATEGY.md): branch types, naming conventions, flow, and cleanup rules. (Closes #2562)
 - [Code of Conduct](CODE_OF_CONDUCT.md): Contributor Covenant baseline — expected behaviour in project spaces, scope, and enforcement through the CoC Committee. (Closes #2549)
 - [Commit message policy](COMMIT_POLICY.md): conventional-commits format, allowed types and scopes, breaking-change signalling, and enforcement. (Closes #2548)
+- [Conflict resolution and escalation path](CONFLICT_RESOLUTION.md): escalation ladder, timelines, and resolution procedures. (Closes #2526)
+- [Tie-breaking rules](TIE_BREAKING.md): tie-breaker mechanisms, designated authority, and rationale requirements. (Closes #2525)
+- [RFC and proposal process](RFC_PROCESS.md): lifecycle stages, review period, and template usage. (Closes #2524)
+- [Voting procedure and quorum](VOTING.md): voting duration, quorum thresholds, and majority rules. (Closes #2523)
 
 ## How to contribute to governance
 
