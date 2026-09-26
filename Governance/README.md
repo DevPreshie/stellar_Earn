@@ -57,6 +57,10 @@ governance change is limited to files inside this `Governance/` folder.
 - [Fork and re-licensing policy](FORK_POLICY.md): how the project may be forked and the approvals a license change needs. (Closes #2509)
 - [Project charter](CHARTER.md): purpose, scope, and the authority structure of the project. (Closes #2501)
 - [Mission and scope](MISSION.md): the project mission, in-scope work, and explicit non-goals. (Closes #2503)
+- [Contributor role](roles/CONTRIBUTOR.md): what the role entails and the contribution ladder. (Closes #2513)
+- [Triager role](roles/TRIAGER.md): triage duties and the label/milestone permissions the role holds. (Closes #2514)
+- [Technical steering committee](TSC.md): the TSC's membership, remit, and term. (Closes #2515)
+- [Leadership and council model](LEADERSHIP.md): how top-level leadership works and how it is held accountable. (Closes #2516)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
