@@ -51,6 +51,10 @@ governance change is limited to files inside this `Governance/` folder.
 - [Governance FAQ](FAQ.md): quick answers to common governance questions. (Closes #2508)
 - [Subproject and module governance](SUBPROJECTS.md): per-area ownership, autonomy, and cross-area rules. (Closes #2507)
 - [Security response team](roles/SECURITY_TEAM.md): membership, authority, and confidentiality. (Closes #2517)
+- [Roles and responsibilities](ROLES.md): role index plus the responsibility and permission matrices. (Closes #2510)
+- [Maintainer role](roles/MAINTAINER.md): duties, rights, and responsiveness expectations for maintainers. (Closes #2511)
+- [Reviewer role](roles/REVIEWER.md): review scope and the approvals a reviewer may give. (Closes #2512)
+- [Fork and re-licensing policy](FORK_POLICY.md): how the project may be forked and the approvals a license change needs. (Closes #2509)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
