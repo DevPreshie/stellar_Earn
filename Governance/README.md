@@ -48,6 +48,9 @@ governance change is limited to files inside this `Governance/` folder.
 
 ## New governance documents
 
+- [Governance FAQ](FAQ.md): quick answers to common governance questions. (Closes #2508)
+- [Subproject and module governance](SUBPROJECTS.md): per-area ownership, autonomy, and cross-area rules. (Closes #2507)
+- [Security response team](roles/SECURITY_TEAM.md): membership, authority, and confidentiality. (Closes #2517)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
