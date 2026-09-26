@@ -52,6 +52,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
 - [Hotfix policy](HOTFIX_POLICY.md): code-freeze and emergency-change controls.
+- [Emergency decision powers and constraints](EMERGENCY_POWERS.md): scope, hard limits, and retroactive ratification for urgent out-of-process decisions. (Closes #2527)
 - [Inclusive language guideline](INCLUSIVE_LANGUAGE.md): preferred terms, exceptions, and enforcement. (Closes #2556)
 - [Semantic versioning policy](VERSIONING.md): MAJOR/MINOR/PATCH rules, pre-release identifiers, and build metadata. (Closes #2559)
 - [Deprecation and breaking-change policy](DEPRECATION_POLICY.md): notice periods, migration requirements, and removal process. (Closes #2560)
