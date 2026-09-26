@@ -8,6 +8,8 @@ This document establishes clear, deterministic rules for resolving deadlocks and
 
 This policy applies whenever a formal vote conducted under [VOTING.md](VOTING.md) (including Technical Steering Committee votes, governance amendments, RFC approvals, or maintainer roster changes) ends in an equal division of votes (50/50 tie or equal distribution among top alternatives).
 
+<!-- Note: abstentions are excluded from the tie calculation; only +1 and -1 votes are counted when determining whether a deadlock has occurred. -->
+
 ## Tie-Breaking Authority
 
 The designated **Tie-Breaking Authority** for the StellarEarn repository is the **Lead Maintainer / Project Lead** (currently `@RUKAYAT-CODER`, as listed in [MAINTAINERS.md](MAINTAINERS.md)).
