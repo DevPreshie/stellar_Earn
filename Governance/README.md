@@ -61,6 +61,10 @@ governance change is limited to files inside this `Governance/` folder.
 - [Governance glossary](GLOSSARY.md): shared definitions of governance terms. (Closes #2504)
 - [Amending governance](AMENDMENTS.md): how governance documents are proposed, reviewed, and ratified. (Closes #2505)
 - [Guiding principles and values](PRINCIPLES.md): the values that guide governance decisions. (Closes #2506)
+- [Contributor role](roles/CONTRIBUTOR.md): what the role entails and the contribution ladder. (Closes #2513)
+- [Triager role](roles/TRIAGER.md): triage duties and the label/milestone permissions the role holds. (Closes #2514)
+- [Technical steering committee](TSC.md): the TSC's membership, remit, and term. (Closes #2515)
+- [Leadership and council model](LEADERSHIP.md): how top-level leadership works and how it is held accountable. (Closes #2516)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.
 - [Pull request guidelines](PR_GUIDELINES.md): size, scope, and splitting guidance.
 - [Maturity checklist](MATURITY_CHECKLIST.md): a scored governance self-audit.
