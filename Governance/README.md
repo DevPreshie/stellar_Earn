@@ -48,6 +48,9 @@ governance change is limited to files inside this `Governance/` folder.
 
 ## New governance documents
 
+- [Governance FAQ](FAQ.md): quick answers to common governance questions. (Closes #2508)
+- [Subproject and module governance](SUBPROJECTS.md): per-area ownership, autonomy, and cross-area rules. (Closes #2507)
+- [Security response team](roles/SECURITY_TEAM.md): membership, authority, and confidentiality. (Closes #2517)
 - [Project charter](CHARTER.md): purpose, scope, and the authority structure of the project. (Closes #2501)
 - [Mission and scope](MISSION.md): the project mission, in-scope work, and explicit non-goals. (Closes #2503)
 - [Issue lifecycle](ISSUE_LIFECYCLE.md): states, transitions, labels, and ownership.

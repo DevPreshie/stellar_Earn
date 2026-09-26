@@ -98,7 +98,34 @@ which simulates click bursts on `ClaimButton` during pending transactions. The l
 reduces duplicate request dispatches by **90%** (10 clicks), **99%** (100 clicks), and
 **99.9%** (1000 clicks), guaranteeing exactly 1 transaction dispatch per claim action.
 
-## 7. Memoized global Header (#2498)
+## 7. Memoized BadgeGallery grid (#2497)
+
+`components/reputation/BadgeGallery.tsx` rebuilt its grid and re-rendered every
+badge on each render. The gallery now:
+
+- derives the `{ badge, isEarned }` grid items with `useMemo`, keyed on the
+  `badges` array and the earned-badge set, so an unrelated parent re-render does
+  not rebuild the list;
+- checks earned membership through a memoized `Set` instead of
+  `Array.includes` inside the render loop, turning per-badge lookup from O(n)
+  into O(1);
+- passes a single stable `onClick` callback (`useCallback`) to every card and
+  wraps `BadgeCard` in `React.memo`, so cards whose `badge`/`isEarned` are
+  unchanged skip re-rendering; and
+- memoizes the empty-state path and keeps the empty state cheap to render.
+
+**Before/after (Vitest, `scripts/benchmarks/badge-gallery.bench.tsx`):**
+mounting 1000 badges and then re-rendering with an unchanged earned set took
+**~14 ms** with the memoized cards versus **~40 ms** with a non-memoized
+baseline — roughly **2.7x faster updates** — because unchanged cards bail out
+instead of re-rendering. At 200 badges the difference is within noise, which is
+expected: the win scales with the number of unchanged cards.
+
+**Measuring in the app:** open React DevTools → Profiler, re-render the
+reputation page (e.g. toggle an unrelated filter), and confirm `BadgeCard`
+commits drop to zero when the badge data has not changed.
+
+## 8. Memoized global Header (#2498)
 
 `components/layout/Header.tsx` is mounted once by `AppLayout` and stays on
 screen for the whole session. It is now wrapped in `React.memo`, its callback
@@ -119,7 +146,7 @@ callback genuinely changes.
 or a mobile-menu toggle, and confirm the `Header` commit count stops scaling
 with unrelated ancestor state changes.
 
-## 8. Debounced quest list filters (#2499)
+## 9. Debounced quest list filters (#2499)
 
 `components/quest/QuestListFilters.tsx` previously invoked its `onChange`
 handlers on every keystroke/selection, and each handler pushes a URL update in
