@@ -58,6 +58,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [Roles and responsibilities](ROLES.md): role index plus the responsibility and permission matrices. (Closes #2510)
 - [Maintainer role](roles/MAINTAINER.md): duties, rights, and responsiveness expectations for maintainers. (Closes #2511)
 - [Reviewer role](roles/REVIEWER.md): review scope and the approvals a reviewer may give. (Closes #2512)
+- [Release manager role](roles/RELEASE_MANAGER.md): duties, the authority to cut a release, the rotation, and the emergency path. (Closes #2518)
 - [Fork and re-licensing policy](FORK_POLICY.md): how the project may be forked and the approvals a license change needs. (Closes #2509)
 - [Project charter](CHARTER.md): purpose, scope, and the authority structure of the project. (Closes #2501)
 - [Mission and scope](MISSION.md): the project mission, in-scope work, and explicit non-goals. (Closes #2503)
