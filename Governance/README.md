@@ -25,6 +25,8 @@ governance change is limited to files inside this `Governance/` folder.
   defines how new subprojects are proposed, incubated, and accepted.
 - **Maintainers roster** - [MAINTAINERS.md](MAINTAINERS.md) lists current
   maintainers, their areas, and how the roster is updated.
+- **Maintainer offboarding** - [OFFBOARDING.md](OFFBOARDING.md) defines how a
+  maintainer steps down or is removed, access revocation, and emeritus status.
 - **Roles** — maintainers, reviewers, triagers, security team, release managers,
   and how people move between them.
 - **Decision-making** — [DECISION_MAKING.md](DECISION_MAKING.md): lazy
@@ -86,6 +88,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [Tie-breaking rules](TIE_BREAKING.md): tie-breaker mechanisms, designated authority, and rationale requirements. (Closes #2525)
 - [RFC and proposal process](RFC_PROCESS.md): lifecycle stages, review period, and template usage. (Closes #2524)
 - [Voting procedure and quorum](VOTING.md): voting duration, quorum thresholds, and majority rules. (Closes #2523)
+- [Maintainer offboarding and emeritus process](OFFBOARDING.md): step-down and removal steps, access-revocation checklist, and emeritus status. (Closes #2521)
 - [Decision-making model](DECISION_MAKING.md): lazy consensus, escalation path, and formal-vote triggers. (Closes #2522)
 
 ## How to contribute to governance
