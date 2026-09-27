@@ -90,6 +90,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [RFC and proposal process](RFC_PROCESS.md): lifecycle stages, review period, and template usage. (Closes #2524)
 - [Voting procedure and quorum](VOTING.md): voting duration, quorum thresholds, and majority rules. (Closes #2523)
 - [Maintainer offboarding and emeritus process](OFFBOARDING.md): step-down and removal steps, access-revocation checklist, and emeritus status. (Closes #2521)
+- [Maintainer onboarding checklist](ONBOARDING_MAINTAINER.md): steps from contributor or reviewer to maintainer, the access grants required, and how the change is recorded. (Closes #2520)
 - [Decision-making model](DECISION_MAKING.md): lazy consensus, escalation path, and formal-vote triggers. (Closes #2522)
 
 ## How to contribute to governance
