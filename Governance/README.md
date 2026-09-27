@@ -29,8 +29,10 @@ governance change is limited to files inside this `Governance/` folder.
   maintainer steps down or is removed, access revocation, and emeritus status.
 - **Roles** — maintainers, reviewers, triagers, security team, release managers,
   and how people move between them.
-- **Decision-making** — consensus, voting, quorum, RFCs, tie-breaking, and how
-  decisions are recorded.
+- **Decision-making** — [DECISION_MAKING.md](DECISION_MAKING.md): lazy
+  consensus, escalation, and what triggers a formal vote; see also
+  [VOTING.md](VOTING.md), quorum, RFCs, tie-breaking, and how decisions are
+  recorded.
 - **Contribution & review** — review policy, approvals, triage, merge and commit
   policies, and the contribution ladder.
 - **Community** — Code of Conduct, enforcement, communication norms, and safety.
@@ -87,6 +89,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [RFC and proposal process](RFC_PROCESS.md): lifecycle stages, review period, and template usage. (Closes #2524)
 - [Voting procedure and quorum](VOTING.md): voting duration, quorum thresholds, and majority rules. (Closes #2523)
 - [Maintainer offboarding and emeritus process](OFFBOARDING.md): step-down and removal steps, access-revocation checklist, and emeritus status. (Closes #2521)
+- [Decision-making model](DECISION_MAKING.md): lazy consensus, escalation path, and formal-vote triggers. (Closes #2522)
 
 ## How to contribute to governance
 
