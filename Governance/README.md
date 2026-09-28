@@ -58,6 +58,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [Roles and responsibilities](ROLES.md): role index plus the responsibility and permission matrices. (Closes #2510)
 - [Maintainer role](roles/MAINTAINER.md): duties, rights, and responsiveness expectations for maintainers. (Closes #2511)
 - [Reviewer role](roles/REVIEWER.md): review scope and the approvals a reviewer may give. (Closes #2512)
+- [Release manager role](roles/RELEASE_MANAGER.md): duties, the authority to cut a release, the rotation, and the emergency path. (Closes #2518)
 - [Fork and re-licensing policy](FORK_POLICY.md): how the project may be forked and the approvals a license change needs. (Closes #2509)
 - [Project charter](CHARTER.md): purpose, scope, and the authority structure of the project. (Closes #2501)
 - [Mission and scope](MISSION.md): the project mission, in-scope work, and explicit non-goals. (Closes #2503)
@@ -89,7 +90,9 @@ governance change is limited to files inside this `Governance/` folder.
 - [RFC and proposal process](RFC_PROCESS.md): lifecycle stages, review period, and template usage. (Closes #2524)
 - [Voting procedure and quorum](VOTING.md): voting duration, quorum thresholds, and majority rules. (Closes #2523)
 - [Maintainer offboarding and emeritus process](OFFBOARDING.md): step-down and removal steps, access-revocation checklist, and emeritus status. (Closes #2521)
+- [Maintainer onboarding checklist](ONBOARDING_MAINTAINER.md): steps from contributor or reviewer to maintainer, the access grants required, and how the change is recorded. (Closes #2520)
 - [Decision-making model](DECISION_MAKING.md): lazy consensus, escalation path, and formal-vote triggers. (Closes #2522)
+- [Required approvals per change type](APPROVALS.md): which changes need how many approvals, from whom, and under which policy. (Closes #2535)
 
 ## How to contribute to governance
 
