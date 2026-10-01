@@ -34,7 +34,10 @@ governance change is limited to files inside this `Governance/` folder.
   [VOTING.md](VOTING.md), quorum, RFCs, tie-breaking, and how decisions are
   recorded.
 - **Contribution & review** — review policy, approvals, triage, merge and commit
-  policies, and the contribution ladder.
+  policies, and the contribution ladder:
+  [CONTRIBUTION_LADDER.md](CONTRIBUTION_LADDER.md) names the rungs from
+  contributor to maintainer, the criteria for each, and the evidence a
+  promotion must show.
 - **Community** — Code of Conduct, enforcement, communication norms, and safety.
 - **Technical policies** — release/versioning, deprecation, dependencies, CI/CD,
   testing, contract-upgrade governance, and audits.
@@ -95,6 +98,7 @@ governance change is limited to files inside this `Governance/` folder.
 - [Required approvals per change type](APPROVALS.md): which changes need how many approvals, from whom, and under which policy. (Closes #2535)
 - [Community moderator role](roles/MODERATOR.md): moderation duties, the actions a moderator may take alone, and escalation to maintainers and the CoC Committee. (Closes #2519)
 - [CI/CD governance and required checks](CICD_POLICY.md): the required status checks, their scope, and who may bypass them. (Closes #2563)
+- [Contribution ladder](CONTRIBUTION_LADDER.md): the rungs from contributor to maintainer, the criteria for reaching each one, the evidence a promotion must show, and how to step back down. (Closes #2540)
 
 ## How to contribute to governance
 
