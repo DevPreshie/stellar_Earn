@@ -1,6 +1,6 @@
 # StellarEarn
 
-> A quest-based earning platform that turns work into achievements on the Stellar 
+> A quest-based earning platform that turns work into achievements on the Stellar blockchain
 
 ## Overview
 
